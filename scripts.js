@@ -1,65 +1,126 @@
-  const quiz = [
-      {
-        question: "Which subject do you enjoy the most?",
-        options: [
-          { text: "Mathematics & Physics", category: "Engineering" },
-          { text: "Visual Arts & Design", category: "Arts" },
-          { text: "Biology & Health Sciences", category: "Health" },
-          { text: "Economics & Business Studies", category: "Business" },
-          { text: "Computer Science & IT", category: "Technology" },
-          { text: "Law & Social Justice", category: "Law" },
-          { text: "Psychology & Human Behavior", category: "Social Sciences" }
-        ]
-      },
-      {
-        question: "Which activity sounds most appealing?",
-        options: [
-          { text: "Building or repairing machines", category: "Engineering" },
-          { text: "Painting, writing or performing", category: "Arts" },
-          { text: "Helping people stay healthy", category: "Health" },
-          { text: "Running a business or managing teams", category: "Business" },
-          { text: "Developing software or apps", category: "Technology" },
-          { text: "Defending rights or debating laws", category: "Law" },
-          { text: "Counseling or understanding people", category: "Social Sciences" }
-        ]
-      },
-      {
-        question: "What describes your personality best?",
-        options: [
-          { text: "Analytical and problem solver", category: "Engineering" },
-          { text: "Creative and expressive", category: "Arts" },
-          { text: "Compassionate and patient", category: "Health" },
-          { text: "Organized and strategic", category: "Business" },
-          { text: "Curious and tech-savvy", category: "Technology" },
-          { text: "Persuasive and principled", category: "Law" },
-          { text: "Empathetic and observant", category: "Social Sciences" }
-        ]
-      },
-      {
-        question: "Which tool would you rather work with?",
-        options: [
-          { text: "Machines and tools", category: "Engineering" },
-          { text: "Paintbrush or camera", category: "Arts" },
-          { text: "Medical instruments", category: "Health" },
-          { text: "Business software", category: "Business" },
-          { text: "Computers and code editors", category: "Technology" },
-          { text: "Legal documents", category: "Law" },
-          { text: "Books and surveys", category: "Social Sciences" }
-        ]
-      },
-      {
-        question: "What motivates you the most?",
-        options: [
-          { text: "Building things that last", category: "Engineering" },
-          { text: "Touching people's hearts", category: "Arts" },
-          { text: "Saving lives and wellness", category: "Health" },
-          { text: "Growing a successful enterprise", category: "Business" },
-          { text: "Creating cutting-edge tech", category: "Technology" },
-          { text: "Protecting rights and laws", category: "Law" },
-          { text: "Helping communities and society", category: "Social Sciences" }
-        ]
-      }
-    ];
+const quiz = [
+  {
+    question: "Which subject do you enjoy the most?",
+    options: [
+      { text: "Mathematics & Physics", category: "Engineering" },
+      { text: "Visual Arts & Design", category: "Arts" },
+      { text: "Biology & Health Sciences", category: "Health" },
+      { text: "Economics & Business Studies", category: "Business" },
+      { text: "Computer Science & IT", category: "Technology" },
+      { text: "Law & Social Justice", category: "Law" },
+      { text: "Psychology & Human Behavior", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "Which activity sounds most appealing?",
+    options: [
+      { text: "Building or repairing machines", category: "Engineering" },
+      { text: "Painting, writing or performing", category: "Arts" },
+      { text: "Helping people stay healthy", category: "Health" },
+      { text: "Running a business or managing teams", category: "Business" },
+      { text: "Developing software or apps", category: "Technology" },
+      { text: "Defending rights or debating laws", category: "Law" },
+      { text: "Counseling or understanding people", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "What describes your personality best?",
+    options: [
+      { text: "Analytical and problem solver", category: "Engineering" },
+      { text: "Creative and expressive", category: "Arts" },
+      { text: "Compassionate and patient", category: "Health" },
+      { text: "Organized and strategic", category: "Business" },
+      { text: "Curious and tech-savvy", category: "Technology" },
+      { text: "Persuasive and principled", category: "Law" },
+      { text: "Empathetic and observant", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "Which tool would you rather work with?",
+    options: [
+      { text: "Machines and tools", category: "Engineering" },
+      { text: "Paintbrush or camera", category: "Arts" },
+      { text: "Medical instruments", category: "Health" },
+      { text: "Business software", category: "Business" },
+      { text: "Computers and code editors", category: "Technology" },
+      { text: "Legal documents", category: "Law" },
+      { text: "Books and surveys", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "What motivates you the most?",
+    options: [
+      { text: "Building things that last", category: "Engineering" },
+      { text: "Touching people's hearts", category: "Arts" },
+      { text: "Saving lives and wellness", category: "Health" },
+      { text: "Growing a successful enterprise", category: "Business" },
+      { text: "Creating cutting-edge tech", category: "Technology" },
+      { text: "Protecting rights and laws", category: "Law" },
+      { text: "Helping communities and society", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "How do you prefer to spend your free time?",
+    options: [
+      { text: "Tinkering with gadgets or machines", category: "Engineering" },
+      { text: "Creating art or music", category: "Arts" },
+      { text: "Volunteering or caring for others", category: "Health" },
+      { text: "Planning events or managing groups", category: "Business" },
+      { text: "Learning new programming languages", category: "Technology" },
+      { text: "Reading about laws or politics", category: "Law" },
+      { text: "Studying human behavior and society", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "Which environment do you prefer to work in?",
+    options: [
+      { text: "Laboratory or workshop", category: "Engineering" },
+      { text: "Studio or theater", category: "Arts" },
+      { text: "Hospital or clinic", category: "Health" },
+      { text: "Office or corporate setting", category: "Business" },
+      { text: "Tech startup or IT firm", category: "Technology" },
+      { text: "Courtroom or legal office", category: "Law" },
+      { text: "Research center or university", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "What kind of problems do you like solving?",
+    options: [
+      { text: "Technical and mechanical problems", category: "Engineering" },
+      { text: "Creative or expressive challenges", category: "Arts" },
+      { text: "Health and wellness issues", category: "Health" },
+      { text: "Business or financial challenges", category: "Business" },
+      { text: "Software or system bugs", category: "Technology" },
+      { text: "Ethical or legal dilemmas", category: "Law" },
+      { text: "Social and cultural issues", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "What skill would you most like to develop?",
+    options: [
+      { text: "Engineering design and innovation", category: "Engineering" },
+      { text: "Artistic expression and technique", category: "Arts" },
+      { text: "Medical and caregiving skills", category: "Health" },
+      { text: "Leadership and entrepreneurship", category: "Business" },
+      { text: "Programming and software development", category: "Technology" },
+      { text: "Legal analysis and argumentation", category: "Law" },
+      { text: "Research and data analysis", category: "Social Sciences" }
+    ]
+  },
+  {
+    question: "What is your ideal impact on the world?",
+    options: [
+      { text: "Build and improve infrastructure", category: "Engineering" },
+      { text: "Inspire and move people emotionally", category: "Arts" },
+      { text: "Improve health and save lives", category: "Health" },
+      { text: "Drive economic growth and innovation", category: "Business" },
+      { text: "Advance technology and connectivity", category: "Technology" },
+      { text: "Ensure justice and equality", category: "Law" },
+      { text: "Promote understanding and social welfare", category: "Social Sciences" }
+    ]
+  }
+];
+
 
     let current = 0;
     let scores = {
