@@ -195,6 +195,18 @@ body.dark #restartBtn:hover {
   margin-bottom: 10px;
 }
 
+/* Fix empty containers from leaving gaps */
+#options:empty {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  min-height: 0;
+}
+
+#result:empty {
+  display: none;
+}
+
 /* 🔧 Mobile Responsive Fixes */
 @media (max-width: 600px) {
   main {
@@ -222,7 +234,7 @@ body.dark #restartBtn:hover {
   button {
     width: 100%;
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 0; /* Removed bottom margin to reduce gap */
   }
 
   #result {
