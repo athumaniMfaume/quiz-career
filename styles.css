@@ -7,9 +7,6 @@ body {
   background: #eef4ff;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   color: #333;
   transition: background 0.3s, color 0.3s;
 }
@@ -39,6 +36,7 @@ main {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 40px 20px;
 }
 
@@ -142,7 +140,7 @@ body.dark #restartBtn:hover {
 
 #result {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 10px auto 5px;
   padding: 25px;
   background: white;
   border-radius: 12px;
@@ -197,14 +195,16 @@ body.dark #restartBtn:hover {
   margin-bottom: 10px;
 }
 
+/* 🔧 Mobile Responsive Fixes */
 @media (max-width: 600px) {
   main {
+    display: block;
     padding: 20px 10px;
   }
 
   .quiz-box {
     width: 95%;
-    margin: 20px auto;
+    margin: 10px auto 0;
     padding: 15px;
     border-radius: 12px;
   }
@@ -221,17 +221,19 @@ body.dark #restartBtn:hover {
 
   button {
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 
   #result {
     padding: 15px;
-    margin: 20px auto;
+    margin: 10px auto 5px;
     width: 95%;
   }
 
   #restartBtn {
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0 0;
   }
 }
 
